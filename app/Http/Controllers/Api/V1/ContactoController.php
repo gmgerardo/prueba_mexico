@@ -1,10 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
+use App\Http\Controllers\Controller;
+use App\Models\Contacto;
 use Illuminate\Http\Request;
 
-class DocumentoscorporativosController extends Controller
+class ContactoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,16 +14,6 @@ class DocumentoscorporativosController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
     {
         //
     }
@@ -40,21 +32,10 @@ class DocumentoscorporativosController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Contacto  $contacto
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
+    public function show(Contacto $contacto)
     {
         //
     }
@@ -63,10 +44,10 @@ class DocumentoscorporativosController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Contacto  $contacto
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Contacto $contacto)
     {
         //
     }
@@ -74,10 +55,10 @@ class DocumentoscorporativosController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Contacto  $contacto
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Contacto $contacto)
     {
         //
     }
